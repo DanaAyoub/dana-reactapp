@@ -12,8 +12,6 @@ function App() {
   return (
     <div className="App">
       <LandingPage />
-
-      ReactDOM.render((
       <Router >
         <Route path="/" component={App}>
           <Route path="/announcment" component={Announcment} />
@@ -21,10 +19,8 @@ function App() {
           <Route path="/footer" component={Footer} />
           <Route path="/suggested" component={Suggested} />
           <Route path="/products" component={Products} />
-
         </Route>
-      </Router>
-      ), document.getElementById('app'))
+      </Router> 
     </div>
   );
 }
