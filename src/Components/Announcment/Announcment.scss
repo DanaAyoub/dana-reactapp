@@ -1,7 +1,24 @@
-.announcment {
+.Announcment {
     background-color:whitesmoke;
+    margin: 30px 0;
+    border-top-style: groove;
+    display: block;
+
+    &__title {
+        font-size: 30px;   
+    }
+    
+    &__img {
+        width: 700px;
+        height: 300px;
+        border: 10px solid;   
+    }
 }
 
-.cream {
-    padding:50px;
+.Announcment__img :hover {
+    width: 100px;
+    background-color: rgb(61, 59, 59);
+    transition: background-color .9s;
+    
 }
+

@@ -1,20 +1,42 @@
 import React from 'react';
 import './Products.scss';
-import Card from '../Card/Card.jsx';
 
-const Products = () => {
-    return (
-        <div>
-            <div classname='item'>
-                <img className="cream1" src={'./assets/spray.jpeg'} />
-                <div classname='description'> A rich moisturising and hydrating lotion which is packed full of natural oils and extracts including sea buckthorn which is well-known for its rejuvenating properties</div>
+class Products extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            items: []
+        }
+    }
+    componentDidMount() {
+        fetch("http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline")
+            .then((response) => {
+                return response.json();
+            })
+            .then((result) => {
+                this.setState({
+                    items: result,
+                });
+            });
+    }
+    render() {
+        const { items } = this.state;
+        console.log(items.brand)
+        return (
+            <div className='Products'>
+                {items.map((user, i) => (
+                    <div >
+                        <img src={user.image_link} alt='produscts'></img>
+                        <h4>{user.name}</h4>
+                        <h4>{user.brand}</h4>
+                        <h4>{user.price}</h4>
+                        <button className='Products__button'>Buy Now</button>
+                    </div>
+                ))}
             </div>
-            <div classname='item'>
-                <img className="cream2" src={'./assets/butter.jpeg'} />
-                <div classname='description'> Pamper your body with this fusion of fruits in a rich nourishing cream containing Shea Butter, Cocoa Butter, Avocado Oil and Jojoba Oil to moisturise; enhanced by natural Mango Extract to cool and soothe the skin</div>
-            </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default Products;

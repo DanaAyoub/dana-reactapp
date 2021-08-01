@@ -1,3 +1,31 @@
-.foot {
-    margin: 15% auto;
+.Footer {
+    background-color: black;
+}
+
+.Footer_copyright {
+    font-size: 15px;
+    margin-top: 40px;
+    color:white;
+}
+
+
+.Footer__bar {
+    margin-right:20px;
+}
+
+.Footer__contant {
+    margin: 10px;
+    padding: 10px;
+}
+
+.icon {
+    margin-right:10px;
+    float: right;
+    color: white;
+}
+
+.help {
+    margin-right:10px;
+    float: left;
+    color: white;
 }

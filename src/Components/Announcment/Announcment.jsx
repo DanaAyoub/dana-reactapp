@@ -1,14 +1,17 @@
 import React from 'react';
 import './Announcment.scss';
+import announcment from '../../assets/makeup.jpg';
 
 const Announcment = () => {
     return (
-        <div classname='announcment'>
-            <h1 classname='descripe'>Natural Cosmatics Collection</h1>
-            <img className="cream" alt="naturalCream" src={'./assets/cream.jpg'} />
-            <h5>Here you can find all you want of 100% natural products for hair and skin</h5>
+        <div className='Announcment'>
+            <h1 className='Announcment__title'>
+                Maybelline All you need of makeup products!
+            </h1>
+            <img className="Announcment__img" alt="announcment" src={announcment} />
         </div>
     );
 }
 
 export default Announcment;
+
