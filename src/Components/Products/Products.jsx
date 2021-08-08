@@ -1,39 +1,34 @@
+import axios from 'axios';
 import React from 'react';
 import './Products.scss';
+import '../../Components/Card/Card.scss';
+import Card from '../../Components/Card/Card.jsx';
 
 class Products extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            items: []
-        }
-    }
+    state = {
+        items: [],
+    };
     componentDidMount() {
-        fetch("http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline")
-            .then((response) => {
-                return response.json();
-            })
-            .then((result) => {
+        axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`)
+            .then((res) => {
                 this.setState({
-                    items: result,
+                    items: res.data,
                 });
             });
     }
     render() {
-        const { items } = this.state;
-        console.log(items.brand)
         return (
-            <div className='Products'>
-                {items.map((user, i) => (
-                    <div >
-                        <img src={user.image_link} alt='produscts'></img>
-                        <h4>{user.name}</h4>
-                        <h4>{user.brand}</h4>
-                        <h4>{user.price}</h4>
-                        <button className='Products__button'>Buy Now</button>
+            <div>
+                {this.state.items.map((item) => (
+                    <div className='products'>
+                        <div className='productItems'>
+                            <Card src={item.image_link}
+                                text={item.name}
+                                price={item.price} />
+                        </div>
                     </div>
-                ))}
+                ))
+                }
             </div>
         );
     }

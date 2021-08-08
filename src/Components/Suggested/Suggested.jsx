@@ -1,9 +1,11 @@
 import React from 'react';
-import './Suggested.scss';
 import face from '../../assets/face.jpg';
 import eyes from '../../assets/eyes.jpg';
 import lips from '../../assets/lips.jpg';
+import './Suggested.scss';
+
 const Suggested = () => {
+    
     return (
         <div className='Suggested'>
             <card className='Suggested__card'>

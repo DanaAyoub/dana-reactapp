@@ -3,7 +3,7 @@
     padding: 10px;
     padding-bottom: 30px;
 
-    &__logo{
+    &__logo {
         display: inline;
         width: 300px;
         height: 80px;
@@ -14,8 +14,9 @@
         color:white;
         float:left;
     }
+
+    &__search {
+        float:right;
+    }
 }
 
-.Header__search {
-    float:right;
-}

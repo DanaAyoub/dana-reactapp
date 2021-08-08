@@ -9,20 +9,23 @@
         border-color:black;
         border:2px solid;
         background-color: whitesmoke;
-        width: 300px;
+        width: 350px;
+        height: 250px;
     }
     
     &__image {
         width: 120px;
         height: 120px;
     }
+
+    &__button{
+        background-color: black;
+        border-color: white;
+        color:white;
+        margin:20px;
+        width: 100px;
+        height: 40px;
+    }
 }
 
-.Suggested__button{
-    background-color: black;
-    border-color: white;
-    color:white;
-    margin:20px;
-    width: 100px;
-    height: 40px;
-}
+

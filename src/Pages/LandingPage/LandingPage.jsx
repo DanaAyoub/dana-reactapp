@@ -4,7 +4,6 @@ import Announcment from '../../Components/Announcment/Announcment.jsx';
 import Products from '../../Components/Products/Products.jsx';
 import Suggested from '../../Components/Suggested/Suggested.jsx';
 import Footer from '../../Components/Footer/Footer.jsx';
-
 import { getAllProducts } from '../../services/Products.service.js';
 
 const LandingPage = () => {
@@ -21,7 +20,7 @@ const LandingPage = () => {
             <Header />
             <Announcment />
             <Suggested />
-            <Products />
+            <Products products={products}/>
             <Footer />
         </div>
     );

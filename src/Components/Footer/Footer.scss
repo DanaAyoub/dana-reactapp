@@ -1,31 +1,27 @@
 .Footer {
     background-color: black;
-}
 
-.Footer_copyright {
-    font-size: 15px;
-    margin-top: 40px;
-    color:white;
-}
+    &_copyright {
+        font-size: 15px;
+        margin-top: 40px;
+        color:white;
+    }
 
+    &__contant {
+        margin: 10px;
+        padding: 10px;
+    }
 
-.Footer__bar {
-    margin-right:20px;
-}
+    &__icon {
+        margin-right:10px;
+        float: right;
+        color: white;
+    }
 
-.Footer__contant {
-    margin: 10px;
-    padding: 10px;
-}
-
-.icon {
-    margin-right:10px;
-    float: right;
-    color: white;
-}
-
-.help {
-    margin-right:10px;
-    float: left;
-    color: white;
+    &__bar {
+        margin-right:10px;
+        float: left;
+        color: white;
+        padding: 10px;
+    }
 }

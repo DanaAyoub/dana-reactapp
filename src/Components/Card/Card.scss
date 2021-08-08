@@ -1,0 +1,31 @@
+// .card {
+//     display:grid;
+//     grid-template-columns: auto auto auto;
+//     grid-column-gap: 10px;
+//     margin: 70px;
+//     width: 350px;
+//     background-color: white;
+// }
+
+.Card { 
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    box-shadow: 20px 19px 7px -18px rgba(0,0,0,0.57);;
+
+    &_btn {
+        background-color: black;
+        border-color: white;
+        color:white;
+        height: 40px;
+        width: 100px;
+
+    }
+}
+
+
+// .btn-del {
+//     display: inline;
+// }
