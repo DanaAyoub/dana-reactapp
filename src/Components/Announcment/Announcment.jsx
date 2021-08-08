@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './Announcment.scss';
 import { BsArrowRightShort } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
 import { Data } from './Data.jsx';
 
-const Announcment = () => {
+const Announcment = (props) => {
     const [value, setValue] = useState(0);
 
     return (
@@ -16,11 +16,10 @@ const Announcment = () => {
                 </h1>
                 <img src={Data[value].image} alt={Data[value].text} key={Data[value].index} />
                 <div>
-                    <button className="Announcment__button" onClick={() => value === 0 ? setValue(3) : setValue(value - 1)}><BsArrowLeft /></button>
-                    <button className="Announcment__button" onClick={() => value === 3 ? setValue(0) : setValue(value + 1)}><BsArrowRightShort /></button>
+                    <button className="Announcment__button" onClick={() => setValue(value + 1)}><BsArrowLeft /></button>
+                    <button className="Announcment__button" onClick={() => value >= 2 ? setValue(0) : setValue(value + 1)}><BsArrowRightShort /></button>
                 </div>
             </div>
- 
         </>
     );
 }

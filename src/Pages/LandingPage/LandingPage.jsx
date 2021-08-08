@@ -20,7 +20,7 @@ const LandingPage = () => {
             <Header />
             <Announcment />
             <Suggested />
-            <Products products={products}/>
+            <Products products={products} />
             <Footer />
         </div>
     );
