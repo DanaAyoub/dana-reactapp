@@ -1,0 +1,27 @@
+.Footer {
+    background-color: black;
+
+    &_copyright {
+        font-size: 15px;
+        margin-top: 40px;
+        color:white;
+    }
+
+    &__contant {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    &__icon {
+        margin-right:10px;
+        float: right;
+        color: white;
+    }
+
+    &__bar {
+        margin-right:10px;
+        float: left;
+        color: white;
+        padding: 10px;
+    }
+}

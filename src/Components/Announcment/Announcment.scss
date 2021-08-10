@@ -1,0 +1,20 @@
+.Announcment {
+    background-color:whitesmoke;
+    margin: 30px 0;
+    border-top-style: groove;
+    display: block;
+
+    &__title {
+        font-size: 30px;   
+    }
+    
+    &__button {
+        transform: scale(1.03);
+        width:50px;
+        background-color: whitesmoke;
+        border-color: rgba(0, 0, 0, 0.014);
+        border-style: 5px solid;
+        }
+    }
+
+   
