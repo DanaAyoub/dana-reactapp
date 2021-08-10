@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dana-reactapp/static/css/main.dd877cc3.chunk.css",
+    "main.js": "/dana-reactapp/static/js/main.4bd01af1.chunk.js",
+    "main.js.map": "/dana-reactapp/static/js/main.4bd01af1.chunk.js.map",
+    "runtime-main.js": "/dana-reactapp/static/js/runtime-main.bb56bb8e.js",
+    "runtime-main.js.map": "/dana-reactapp/static/js/runtime-main.bb56bb8e.js.map",
+    "static/js/2.792a5c2a.chunk.js": "/dana-reactapp/static/js/2.792a5c2a.chunk.js",
+    "static/js/2.792a5c2a.chunk.js.map": "/dana-reactapp/static/js/2.792a5c2a.chunk.js.map",
+    "index.html": "/dana-reactapp/index.html",
+    "static/css/main.dd877cc3.chunk.css.map": "/dana-reactapp/static/css/main.dd877cc3.chunk.css.map",
+    "static/js/2.792a5c2a.chunk.js.LICENSE.txt": "/dana-reactapp/static/js/2.792a5c2a.chunk.js.LICENSE.txt",
+    "static/media/eyes.47d04e14.jpg": "/dana-reactapp/static/media/eyes.47d04e14.jpg",
+    "static/media/face.14fd61ca.jpg": "/dana-reactapp/static/media/face.14fd61ca.jpg",
+    "static/media/lips.0863e919.jpg": "/dana-reactapp/static/media/lips.0863e919.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb56bb8e.js",
+    "static/js/2.792a5c2a.chunk.js",
+    "static/css/main.dd877cc3.chunk.css",
+    "static/js/main.4bd01af1.chunk.js"
+  ]
+}
