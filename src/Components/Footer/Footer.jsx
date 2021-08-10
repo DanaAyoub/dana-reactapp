@@ -12,19 +12,19 @@ const Footer = () => {
             <a className='Footer__bar' href="setting">Settings</a>
             <a className='Footer__bar' href="language">Language</a>
             <div className='Footer__contant'>
-                <a href="https://www.facebook.com/maybelline" class="Footer__icon" target="_blank" rel='noreferrer' aria-label="Facebook">
+                <a href="https://www.facebook.com/maybelline" className="Footer__icon" target="_blank" rel='noreferrer' aria-label="Facebook">
                     <FaFacebookF /> Facebook
                 </a>
-                <a href="https://twitter.com/maybelline" class="Footer__icon" target="_blank" rel='noreferrer' aria-label="Twitter">
+                <a href="https://twitter.com/maybelline" className="Footer__icon" target="_blank" rel='noreferrer' aria-label="Twitter">
                     <FaTwitter /> Twitter
                 </a>
-                <a href="https://www.pinterest.com/Maybelline/" class="Footer__icon" target="_blank" rel='noreferrer' aria-label="Pinterest">
+                <a href="https://www.pinterest.com/Maybelline/" className="Footer__icon" target="_blank" rel='noreferrer' aria-label="Pinterest">
                     <FaPinterest />Pinterest
                 </a>
-                <a href="https://instagram.com/maybelline/" class="Footer__icon" target="_blank" rel='noreferrer' aria-label="Instagram">
+                <a href="https://instagram.com/maybelline/" className="Footer__icon" target="_blank" rel='noreferrer' aria-label="Instagram">
                     <FaInstagram />  Instagram
                 </a>
-                <a href="https://www.youtube.com/user/maybellinenewyork" class="Footer__icon" target="_blank" rel='noreferrer' aria-label="Youtube">
+                <a href="https://www.youtube.com/user/maybellinenewyork" className="Footer__icon" target="_blank" rel='noreferrer' aria-label="Youtube">
                     <FaYoutube />   Youtube
                 </a>
             </div>

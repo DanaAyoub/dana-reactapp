@@ -1,5 +1,4 @@
-import React, { useState , useEffect } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useState } from 'react';
 import './Announcment.scss';
 import { BsArrowRightShort } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
@@ -8,25 +7,32 @@ import { Data } from './Data.jsx';
 const Announcment = (props) => {
     const [value, setValue] = useState(0);
 
+    const prev = () => {
+        value == 0 ? setValue(value + 1) : setValue(0)
+    }
+
+    const next = () => {
+        value >= 2 ? setValue(0) : setValue(value + 1)
+    }
     return (
-        <>
-       <div className="Announcment">
-                <h1 className='Announcment__title'>
-                    Maybelline All you need of makeup products!
-                </h1>
-                <img src={Data[value].image} alt={Data[value].text} key={Data[value].index} />
-                <div>
-                    <button className="Announcment__button" onClick={() => setValue(value + 1)}><BsArrowLeft /></button>
-                    <button className="Announcment__button" onClick={() => value >= 2 ? setValue(0) : setValue(value + 1)}><BsArrowRightShort /></button>
-                </div>
+
+        <div className="Announcment">
+            <h1 className='Announcment__title'>
+                Maybelline All you need of makeup products!
+            </h1>
+            <img src={Data[value].image} alt={Data[value].text} key={Data[value].index} />
+            <div>
+                <button className="Announcment__button"
+                    onClick={prev}>
+                    <BsArrowLeft />
+                </button>
+                <button className="Announcment__button"
+                    onClick={next}>
+                    <BsArrowRightShort />
+                </button>
             </div>
-        </>
+        </div>
     );
 }
-
-ReactDOM.render(
-    <Announcment />,
-    document.getElementById('root')
-);
 
 export default Announcment;

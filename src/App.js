@@ -10,11 +10,11 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header/>
       <Router history={history}>
         <Route path="/" component={LandingPage}/>
-        <Route path="/header" component={Header}/>
-        <Route path="/footer" component={Footer}/>
       </Router> 
+      <Footer/>
     </div>
   );
 }
