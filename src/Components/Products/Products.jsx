@@ -1,5 +1,4 @@
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Products.scss';
 import '../../Components/Card/Card.scss';
 import Card from '../../Components/Card/Card.jsx';
