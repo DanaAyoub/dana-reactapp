@@ -1,15 +1,13 @@
-import React , {useState, useEffect, useContext} from 'react';
-import Products from '../Components/Products/Products';
-import AppContext from '../context'
+import React, { useContext } from 'react';
+import ProductsContext from '../Context/products.context';
 
+const ShoppingCart = (props) => {
+    const products = useContext(ProductsContext)
+    console.log(products);
 
-const ShoppingCart = () => {
-    // const shopContext = useContext(AppContext)
     return (
-        <div>
-         {/* <Products products={shopContext.products}/> */}
-        </div>
+        null
     );
 }
 
-export default ShoppingCart
+export default ShoppingCart;

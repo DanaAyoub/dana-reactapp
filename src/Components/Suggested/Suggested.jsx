@@ -9,7 +9,9 @@ const Suggested = () => {
     return (
         <div className='Suggested'>
             <div className='Suggested__card'>
-                <h2>Face</h2>
+                <h2>
+                    Face
+                </h2>
                 <img className="Suggested__image"
                     alt="BCream" src={face} />
                 <button className='Suggested__button'>
@@ -17,7 +19,9 @@ const Suggested = () => {
                 </button>
             </div>
             <div className='Suggested__card'>
-                <h2>Eyes</h2>
+                <h2>
+                    Eyes
+                </h2>
                 <img className="Suggested__image"
                     alt="HCream"
                     src={eyes} />
@@ -26,7 +30,9 @@ const Suggested = () => {
                 </button>
             </div>
             <div className='Suggested__card'>
-                <h2>Lips</h2>
+                <h2>
+                    Lips
+                </h2>
                 <img className="Suggested__image"
                     alt="HCream"
                     src={lips} />

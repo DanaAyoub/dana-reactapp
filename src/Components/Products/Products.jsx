@@ -1,9 +1,10 @@
-import React, { useState , useContext} from 'react';
+import React, { useState, useContext } from 'react';
 import './Products.scss';
 import '../../Components/Card/Card.scss';
 import Card from '../../Components/Card/Card.jsx';
 import { GiShoppingCart } from "react-icons/gi"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import ProductsContext from '../../Context/products.context';
 
 const getRandomInt = (max) => {
     return Math.floor(Math.random() * max);
@@ -12,14 +13,17 @@ const getRandomInt = (max) => {
 const Products = (props) => {
 
     const [count, setCount] = useState(0);
+    const { products, setProducts } = useContext(ProductsContext)
 
     const addToCart = (product) => {
+        setProducts([...products, product])
         props.onAddToCartHandler(product);
     }
 
     const handleIncrement = () => {
         setCount(count => count + 1);
     };
+
     const isAdded = (value) => {
         if (!props.selectedProducts || props.selectedProducts.length <= 0) {
             return false;
@@ -32,6 +36,8 @@ const Products = (props) => {
         return null;
     }
 
+    console.log(products)
+
     return (
         <div>
             {
@@ -40,14 +46,14 @@ const Products = (props) => {
                         <div className='Products'
                             key={`${product.name}+${getRandomInt(10000)}`}>
                             <div className='productItems'>
-                                <Link to={{ pathname: "/ShoppingCart" }}>
+                                <Link to={{ pathname: "/ShoppingCart" }} >
                                     <button className='Products__cart'>
-                                        <GiShoppingCart className='cart__icon' />
+                                        <GiShoppingCart className='Products__icon' />
                                         <p className='Products__counter'
                                             value={count}
-                                            type='text'> {count} </p>
+                                            type='text'>
+                                            {count} </p>
                                     </button>
-
                                 </Link>
                                 <Card src={product.image_link}
                                     text={product.name}
@@ -59,8 +65,8 @@ const Products = (props) => {
                                     }}
                                     value={product}
                                     disabled={isAdded(product.id)} >
-                                    Add to cart</button>
-
+                                    Add to cart
+                                </button>
                             </div>
                         </div>
                     )

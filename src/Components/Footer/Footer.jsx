@@ -49,10 +49,11 @@ const Footer = () => {
                 <a href="https://www.youtube.com/user/maybellinenewyork"
                     className="Footer__icon"
                     target="_blank">
-                    <FaYoutube />   Youtube
+                    <FaYoutube />
+                    Youtube
                 </a>
             </div>
-            <h5 className='Footer_copyright'>
+            <h5 className='Footer__copyright'>
                 Copyright © 2021 Maybelline New York.
             </h5>
         </div>
